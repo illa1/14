@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Smokum&display=swap');
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background-color:#ab3135;
+}
+#text_animation{
+	color:white;
+	font-family:"Anton";
+	font-size:100px;
+	padding-top:20px;
+}
+header{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	padding-top:100px;
+}
+#mario_animation{
+	background-image: url(images/m.jpg);
+	height:200px;
+	width:200px;
+	border:5px solid #6b1316;
+	box-shadow: 0 0 0 4px white;
+	border-radius:50%;
+	transition:background-image 4s, transform 4s 1s,  border-radius 4s, border-color 3s 1s,box-shadow 2s 1s;
+}
+#mario_animation:hover{
+	background-image: url(images/mario1.jpg);
+	transform:rotate(45deg);
+	border-radius:0%;
+	border-color:#ab3135;
+	box-shadow: 0 0 0 6px blue;
+}
+header span{
+	display:inline-block;
+}
+header .m{
+	transition:3s 2s
+}
+header .a{
+	transition:3s 2s
+}
+header .r{
+	transition:3s 2s
+}
+header .i{
+	transition:3s 2s
+}
+header .o{
+	transition:3s 2s
+}
+header:hover .m{
+	transform:
+	translateX(-0.3em)
+	rotate(-45deg);
+}
+header:hover .a{
+	transform:
+	rotate(-20deg)
+	scale3d(1, 2.2, 1)
+	skewX(10deg);
+}
+header:hover .r{
+	transform:
+	rotate3d(80, 360, 90, 50deg);
+}
+header:hover .i{
+	transform: 
+	scale(0.2, 0.3)
+	translateY(0.8in);
+}
+header:hover .o{
+	transform: 
+	skewX(-30deg)
+	scaleY(0.5);
+}
+
+
+
+
+
+
+
